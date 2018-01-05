@@ -14,4 +14,10 @@ a {
 img {
   max-width: 100%; }
 
+/* Grid Container */
+#container {
+  display: grid;
+  grid-template-rows: 15% 65% 10% 10%;
+  grid-template-columns: 100%; }
+
 /*# sourceMappingURL=style.css.map */
