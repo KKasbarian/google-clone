@@ -1,0 +1,17 @@
+/* Default and Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  max-width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
