@@ -15,9 +15,22 @@ a {
     color: #000;
 }
 
+ul {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
 }
+
+// SASS Helpers, Placeholders and Variables
+
+%lg-display-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 /* Grid Container */
 
@@ -25,4 +38,74 @@ img {
     display: grid;
     grid-template-rows: 15% 65% 10% 10%;
     grid-template-columns: 100%;
+}
+
+/* Navigation */
+
+#navigation {
+    @extend %lg-display-flex;
+    grid-area: 1 / 1 / 2 / 2;
+    align-items: center;
+    padding: 17px 0;
+
+    div:first-child {
+        margin-left: 18px;
+        color: #000;
+        opacity: 0.75;
+    }
+
+    div:last-child {
+        margin-right: 25px;
+        color: #000;
+        opacity: 0.85;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul li {
+        display: inline;
+        font-size: 13px;
+        font-family: arial, helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    ul li a {
+        padding: 0 11px;
+    }
+
+    ul .fa-th {
+        font-size: 18px;
+        color: #737373;
+    }
+
+    ul .fa-bell {
+        padding: 4.5px 0 0 5px;
+        font-size: 10px;
+        background: rgba(0, 0, 0, 0.65);
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    ul .fa-user-circle {
+        font-size: 29px;
+        color: #1362ac;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    #navigation {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin: 5px 0;
+        }
+    }
 }
