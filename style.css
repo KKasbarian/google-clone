@@ -90,7 +90,7 @@ img {
   #search .input {
     width: 65%;
     padding: 13px 15px;
-    background: white url("mic.png") right no-repeat;
+    background: white url("images/mic.png") right no-repeat;
     background-size: 3%;
     border: 0.5px solid #cacaca;
     border-bottom: none;
