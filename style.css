@@ -17,7 +17,7 @@ ul {
 img {
   max-width: 100%; }
 
-#navigation {
+#navigation, #footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -34,11 +34,11 @@ img {
   align-items: center;
   padding: 17px 0; }
   #navigation div:first-child {
-    margin-left: 18px;
+    margin-left: 16px;
     color: #000;
     opacity: 0.75; }
   #navigation div:last-child {
-    margin-right: 25px;
+    margin-right: 23px;
     color: #000;
     opacity: 0.85; }
   #navigation ul {
@@ -50,7 +50,7 @@ img {
     font-family: arial, sans-serif, helvetica;
     font-weight: 400; }
   #navigation ul li a {
-    padding: 0 11px; }
+    padding: 0 10px; }
   #navigation ul .fa-th {
     font-size: 18px;
     color: #737373; }
@@ -83,7 +83,7 @@ img {
   grid-area: 2 / 1 / 3 / 2;
   width: 70%;
   margin: 0 auto;
-  padding: 120px 0 100px 0; }
+  padding: 120px 0 120px 0; }
   #search img {
     width: 40%;
     margin-bottom: 15px; }
@@ -130,7 +130,7 @@ img {
 @media screen and (max-width: 760px) {
   #search {
     width: 100%;
-    padding: 40px 0; }
+    padding: 40px 0 80px 0; }
     #search img {
       width: 80%; }
     #search .input {
@@ -154,5 +154,39 @@ img {
       color: #222; }
       #search .g-versions a {
         padding: 0 5px; } }
+#country {
+  grid-area: 3 / 1 / 4 / 2;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  padding-left: 30px; }
+  #country p {
+    text-align: left;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    color: rgba(0, 0, 0, 0.56); }
+
+#footer {
+  grid-area: 4 / 1 / 5 / 2;
+  padding: 0 20px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px; }
+  #footer ul li {
+    display: inline; }
+    #footer ul li a {
+      margin: 3px 11px;
+      font-size: 13px;
+      font-family: arial, sans-serif;
+      color: #666; }
+
+@media screen and (max-width: 480px) {
+  #country {
+    padding-left: 20px; }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px; } }
 
 /*# sourceMappingURL=style.css.map */
