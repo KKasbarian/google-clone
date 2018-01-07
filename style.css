@@ -190,6 +190,7 @@ img {
     padding: 0 10px; } }
 /* Apps List */
 #apps {
+  display: none;
   text-align: center;
   position: absolute;
   top: 60px;
@@ -214,7 +215,8 @@ img {
     #apps .flex-apps div {
       flex-basis: 33%;
       padding: 10px;
-      margin: 10px 0; }
+      margin: 10px 0;
+      cursor: pointer; }
       #apps .flex-apps div:hover {
         border: 1px solid #ccc; }
     #apps .flex-apps img {
