@@ -17,7 +17,7 @@ ul {
 img {
   max-width: 100%; }
 
-#navigation, #footer, #apps .flex-apps {
+#navigation, #footer, #apps .flex-apps, #notif .flex-notif, #notif .main-notif {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -283,5 +283,50 @@ img {
   #apps::before,
   #apps::after {
     display: none; } }
+/* Notification */
+#notif {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  width: 30%;
+  padding-top: 15px;
+  background: #eee;
+  color: #000;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+  #notif .flex-notif {
+    align-items: center; }
+    #notif .flex-notif div:first-child {
+      flex-basis: 15%; }
+    #notif .flex-notif div:last-child {
+      flex-basis: 75%;
+      margin-right: 60px; }
+  #notif .setting-cog {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.54); }
+  #notif .logo-name {
+    font-size: 22px;
+    font-family: "Open Sans", arial, sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.26); }
+  #notif .main-notif {
+    justify-content: center;
+    align-items: center;
+    height: 310px; }
+    #notif .main-notif p {
+      font-size: 14px;
+      font-family: arial, sans-serif;
+      color: #aaa; }
+  #notif .notif-btn {
+    display: block;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+    background: #f3f3f3;
+    color: rgba(0, 0, 0, 0.54);
+    width: 100%;
+    padding: 4px 0; }
 
 /*# sourceMappingURL=style.css.map */
