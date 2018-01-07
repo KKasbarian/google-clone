@@ -154,6 +154,7 @@ img {
       color: #222; }
       #search .g-versions a {
         padding: 0 5px; } }
+/* Footer */
 #country {
   grid-area: 3 / 1 / 4 / 2;
   background: #f2f2f2;
