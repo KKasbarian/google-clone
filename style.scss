@@ -399,7 +399,7 @@ $def-fonts: arial, sans-serif;
 /* Notification */
 
 #notif {
-    display: block;
+    display: none;
     text-align: center;
     position: absolute;
     top: 57px;
@@ -417,11 +417,11 @@ $def-fonts: arial, sans-serif;
         align-items: center;
 
         div:first-child {
-            flex-basis: 15%;
+            flex-basis: 25%;
         }
 
         div:last-child {
-            flex-basis: 75%;
+            flex-basis: 65%;
             margin-right: 60px;
         }
     }
@@ -477,4 +477,33 @@ $def-fonts: arial, sans-serif;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid rgba(202, 202, 202, 0.6);
+}
+
+@media screen and (max-width: 760px) {
+    #notif {
+        display: none;
+        top: 80px;
+        right: 15px;
+        width: 90%;
+    
+        .flex-notif div:first-child {
+            flex-basis: 25%;
+        }
+
+        .flex-notif div:last-child {
+            flex-basis: 65%;
+            margin-right: 30px;
+        }
+
+        .main-notif {
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+        }
+    }
+    
+    #notif::before,
+    #notif::after {
+        display: none;
+    }
 }
