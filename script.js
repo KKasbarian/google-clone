@@ -17,3 +17,13 @@ $(document).ready(function(){
 });
 
 /* End Notifications Toggle */
+
+/* User Account Toggle */
+
+$(document).ready(function(){
+    $(".user-acc-btn").click(function(){
+        $("#user").toggle();
+    });
+});
+
+/* End User Account Toggle */
