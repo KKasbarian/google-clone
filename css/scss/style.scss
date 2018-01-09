@@ -1,27 +1,4 @@
-/* Default and Resets */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #fff;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-}
+@import 'base/base';
 
 // SASS Helpers, Placeholders and Variables
 
