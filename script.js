@@ -27,3 +27,13 @@ $(document).ready(function(){
 });
 
 /* End User Account Toggle */
+
+/* Settings Toggle */
+
+$(document).ready(function(){
+    $(".settings-btn").click(function(){
+        $("#settings").toggle();
+    });
+});
+
+/* End Settings Toggle */
