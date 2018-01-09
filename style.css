@@ -370,7 +370,7 @@ img {
 /* User Account */
 #user {
   text-align: center;
-  display: block;
+  display: none;
   position: absolute;
   top: 57px;
   right: 22px;
