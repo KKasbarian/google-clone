@@ -1,0 +1,178 @@
+// Media Queries & Breakpoints
+
+// Navigation
+@media screen and (max-width: 760px) {
+    #navigation {
+        display: flex;
+        flex-direction: column;
+
+        div:first-child {
+            margin-left: 0;
+        }
+    
+        div:last-child {
+            margin-right: 0;
+        }
+
+        div {
+            margin: 5px 0;
+        }
+    }
+
+    .lg-show {
+        display: none;
+    }
+
+    .sm-show {
+        display: block;
+    }
+}
+
+// Search
+@media screen and (max-width: 760px) {
+    #search {
+        width: 100%;
+        padding: 40px 0 80px 0;
+
+        img {
+            width: 60%;
+        }
+
+        .input {
+            width: 95%;
+            background-size: 5%;
+        }
+
+        .search-btn a {
+            @include def-btn();
+            padding: 11px 13px;
+        }
+
+        .g-versions {
+            margin-top: 15px;
+            font-size: 13px;
+            font-family: $def-fonts, helvetica;
+            font-weight: 400;
+            color: #222;
+
+            a {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+// Footer
+@media screen and (max-width: 540px) {
+    #country {
+        padding-left: 20px;
+    }
+    
+    #footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}
+
+// Apps List
+@media screen and (max-width: 760px) {
+    #apps {
+        display: none;
+        top: 60px;
+        right: 15px;
+        width: 90%;
+        padding-top: 10px;
+
+        .flex-apps {
+            margin-bottom: 10px;
+            padding: 0 4px;
+    
+            div {
+                flex-basis: 40%;
+                padding: 10px;
+                margin: 3px 0;
+            }
+    
+            img {
+                width: 45%;
+            }
+    
+            p {
+                line-height: 15px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    #apps::before,
+    #apps::after {
+        display: none;
+    }
+}
+
+// Notifications
+@media screen and (max-width: 760px) {
+    #notif {
+        display: none;
+        top: 60px;
+        right: 15px;
+        width: 90%;
+    
+        .flex-notif div:first-child {
+            flex-basis: 25%;
+        }
+
+        .flex-notif div:last-child {
+            flex-basis: 65%;
+            margin-right: 30px;
+        }
+
+        .main-notif {
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+        }
+    }
+    
+    #notif::before,
+    #notif::after {
+        display: none;
+    }
+}
+
+// User Account
+@media screen and (max-width: 760px) {
+    #user {
+        top: 60px;
+        right: 3px;
+        width: 280px;
+    
+        .user-avatar {
+            margin-right: 10px;
+        }
+    
+        .user-credentials > a {
+                padding: 5px 12px;
+                font-size: 13px;
+                font-family: $def-fonts;
+                font-weight: bold;
+                background: #4d90fe;
+                color: #fff;
+                border: 1px solid #3079ed;
+                border-radius: 2px;
+        }
+    
+        .user-options {
+            padding: 15px 25px;
+        }
+    }
+    
+    #user::before,
+    #user::after {
+        display: none;
+    }
+}
+
+// Settings
+// No Responsive CSS Code for Settings
