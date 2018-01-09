@@ -7,6 +7,9 @@
 // Defaults and Resets
 @import 'base/base';
 
+// Pages
+@import 'pages/main';
+
 // Modules
 @import 'modules/apps-list';
 @import 'modules/notifications';
@@ -20,11 +23,3 @@
 
 // Media Queries & Breakpoints
 @import 'utils/breakpoints';
-
-/* Grid Container */
-
-#container {
-    display: grid;
-    grid-template-rows: 15% 65% 10% 10%;
-    grid-template-columns: 100%;
-}
