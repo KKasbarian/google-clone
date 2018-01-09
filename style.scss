@@ -712,3 +712,33 @@ $def-fonts: arial, sans-serif;
         display: none;
     }
 }
+
+/* Settings */
+
+#settings {
+    position: absolute;
+    text-align: left;
+    bottom: 31px;
+    right: 30px;
+    padding: 12px 0;
+    background: #fff;
+    border: 1px solid #999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    ul li {
+        display: block;
+        padding: 15px 30px;
+        font-size: 13px;
+        font-family: $def-fonts;
+        font-weight: 400;
+
+        a {
+            color: #777;
+
+            &:hover {
+                color: #333;
+                text-decoration: underline;
+            }
+        }
+    }
+}
