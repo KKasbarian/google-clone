@@ -1,0 +1,170 @@
+// User Account
+
+#user {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 57px;
+    right: 22px;
+    width: 300px;
+    background: #fff;
+    color: #000;
+    border: 1px solid rgba(204, 204, 204, 0.7);
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+    .flex-user {
+        @extend %lg-display-flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .user-avatar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        background: #1362ac;
+        background: url('https://ui-avatars.com/api/?name=John+Doe&background=2a84d8&color=fff&font-size=0.6') center no-repeat;
+        background-size: 96px 96px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        a {
+            display: block;
+            position: relative;
+            bottom: 0;
+            font-size: 10px;
+            font-family: $def-fonts;
+            font-weight: 700;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            line-height: 2.5;
+        }
+    }
+
+    .user-credentials {
+        text-align: left;
+        flex-basis: 60%;
+        
+        h2 {
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 700;
+        }
+
+        .user-email {
+            margin-bottom: 8px;
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 400;
+            color: #666;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 400;
+            color: #ccc;
+
+            a {
+                color: #36c;
+            }
+
+        }
+
+        > a {
+            padding: 5px 12px;
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: bold;
+            background: #4d90fe;
+            color: #fff;
+            border: 1px solid #3079ed;
+            border-radius: 2px;
+        }
+    }
+
+    .flex-other-user {
+        @extend %lg-display-flex;
+        padding: 10px 20px;
+        background: #f5f5f5;
+        border-top: 1px solid rgba(0,0,0,.2);
+
+        &:hover {
+            background: #eee;
+        }
+
+        a {
+            font-size: 50px;
+            color: #2a09bb;
+        }
+
+        div:last-child {
+            text-align: left;
+            flex-basis: 75%;
+            padding-top: 6px;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 400;
+            color: #000;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 400;
+            color: #666;
+        }
+    }
+
+    .user-options {
+        @extend %lg-display-flex;
+        padding: 15px 20px;
+        background: #f5f5f5;
+        border-top: 1px solid rgba(0,0,0,.2);
+
+        a {
+            padding: 6px 12px;
+            font-size: 13px;
+            font-family: $def-fonts;
+            font-weight: 400;
+            background: #f8f8f8;
+            color: #666;
+            border: 1px solid #c6c6c6;
+            border-radius: 2px;
+        }
+    }
+}
+
+#user::before,
+#user::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+#user::before {
+    top: -24px;
+    right: 13px;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(0, 0, 0, 0.2);
+}
+
+#user::after {
+    top: -21px;
+    right: 15px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
