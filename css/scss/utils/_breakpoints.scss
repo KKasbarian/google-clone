@@ -1,6 +1,6 @@
-// Media Queries & Breakpoints
+/* Media Queries & Breakpoints */
 
-// Navigation
+/* Navigation */
 @media screen and (max-width: 760px) {
     #navigation {
         display: flex;
@@ -28,7 +28,7 @@
     }
 }
 
-// Search
+/* Search */
 @media screen and (max-width: 760px) {
     #search {
         width: 100%;
@@ -62,7 +62,7 @@
     }
 }
 
-// Footer
+/* Footer */
 @media screen and (max-width: 540px) {
     #country {
         padding-left: 20px;
@@ -75,7 +75,7 @@
     }
 }
 
-// Apps List
+/* Apps List */
 @media screen and (max-width: 760px) {
     #apps {
         display: none;
@@ -111,7 +111,7 @@
     }
 }
 
-// Notifications
+/* Notifications */
 @media screen and (max-width: 760px) {
     #notif {
         display: none;
@@ -141,7 +141,7 @@
     }
 }
 
-// User Account
+/* User Account */
 @media screen and (max-width: 760px) {
     #user {
         top: 60px;
@@ -174,5 +174,5 @@
     }
 }
 
-// Settings
-// No Responsive CSS Code for Settings
+/* Settings */
+/* No Responsive CSS Code for Settings */
