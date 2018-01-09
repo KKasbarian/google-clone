@@ -198,6 +198,11 @@ $def-fonts: arial, sans-serif;
 
         a {
             padding: 0 5px;
+            color: #1a0dab;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

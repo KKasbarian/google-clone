@@ -131,7 +131,10 @@ img {
     font-weight: 400;
     color: #222; }
     #search .g-versions a {
-      padding: 0 5px; }
+      padding: 0 5px;
+      color: #1a0dab; }
+      #search .g-versions a:hover {
+        text-decoration: underline; }
 
 @media screen and (max-width: 760px) {
   #search {
