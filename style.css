@@ -520,6 +520,7 @@ img {
     display: none; } }
 /* Settings */
 #settings {
+  display: none;
   position: absolute;
   text-align: left;
   bottom: 31px;
