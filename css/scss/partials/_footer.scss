@@ -1,0 +1,36 @@
+// Footer
+
+#country {
+    grid-area: 3 / 1 / 4 / 2;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    padding-left: 30px;
+
+    p {
+        text-align: left;
+        font-size: 15px;
+        font-family: $def-fonts;
+        color: rgba(0, 0, 0, 0.56);
+    }
+}
+
+#footer {
+    grid-area: 4 / 1 / 5 / 2;
+    @extend %lg-display-flex;
+    padding: 0 20px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+
+    ul li {
+        display: inline;
+
+        a {
+            margin: 0 11px;
+            font-size: 13px;
+            font-family: $def-fonts;
+            color: #666;
+        }
+    }
+}
